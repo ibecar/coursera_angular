@@ -1,0 +1,23 @@
+body {
+  padding: 10px;
+}
+
+p {
+  padding: 5px 10px;
+}
+
+.error {
+    border: 1px solid red;
+    background-color: #ffcccc;
+    opacity: .8;
+    color: #550000;
+    font-weight: bold;
+}
+
+.ok {
+    border: 1px solid green;
+    background-color: #ccffcc;
+    opacity: 0.8;
+    color:#005500;
+    font-weight: bold;
+}

@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <script src="angular.min.js"></script>
   <script src="app.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
   <title>Coursera assinment week1</title>
 </head>
-<body ng-app='week1app'>
+<body ng-app='LunchCheck'>
   <h1>Week 1 assignment</h1>
-  <div class="content" ng-controller="controller">
+  <div class="content" ng-controller="LunchCheckController">
     <input type="text" ng-model="input">
+    <input type="button" value="Check If Too Much!" ng-click="checkMe();">
+    <p ng-if="errorEmptyData" class="error">Please enter data first!</p>
+    <p ng-if="error" class="ok">Too much!</p>
+    <p ng-if="ok" class="ok">Enjoy!</p>
   </div>
-  <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.6'><\/script>".replace("HOST", location.hostname));
-//]]></script>
 </bodY>
 </html>
